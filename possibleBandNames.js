@@ -25,6 +25,7 @@ function possibleBandNames(array) {
 
     //combinedNames.forEach(bandNameLength);
 
+    // Shuffle words in combinedNames
     function shuffle(array) {
         let currentIndex = array.length,  randomIndex;
         
@@ -43,8 +44,12 @@ function possibleBandNames(array) {
         return array;
     }
 
+    // Generate random number for slicing combinedNames
+    const rndInt = Math.floor(Math.random() * 5) + 2
+
     shuffle(combinedNames)
-    console.log(combinedNames)
+    
+    console.log(combinedNames.slice(0,rndInt))
 
 }
 
