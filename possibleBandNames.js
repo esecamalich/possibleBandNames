@@ -1,3 +1,4 @@
+function possibleBandNames(array) {
 // Define two original band names
 let firstBandName = 'Goo Goo Dolls';
 let secondBandName = 'Foo Fighters';
@@ -6,7 +7,6 @@ console.log('The chosen band names are "' + firstBandName + '" and "' + secondBa
 // Turn both names into an array
 let firstBandArray = firstBandName.split(' ');
 console.log('First Band: ' + firstBandArray);
-
 
 let secondBandArray = secondBandName.split(' ');
 console.log('Second Band: ' + secondBandArray);
@@ -18,6 +18,12 @@ console.log('Total words in First Band\'s name: ' + firstBandWordLength)
 let secondBandWordLength = secondBandArray.length;
 console.log('Total words in irst Band\'s name: ' + secondBandWordLength)
 
+}
+
+possibleBandNames();
+
+
+// TODO: Set the amount of 
 
 // Concatenate both bands name's into a single array.
 /*let combinedNames = [].concat(firstBandArray, secondBandArray);
