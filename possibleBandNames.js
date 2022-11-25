@@ -5,12 +5,12 @@ console.log('The chosen band names are ' + firstBandName + ' and ' + secondBandN
 
 // Turn both names into an array
 let firstBandArray = firstBandName.split(' ');
-console.log(firstBandArray);
+console.log('First Band: ' + firstBandArray);
 
 let secondBandArray = secondBandName.split(' ');
-console.log(secondBandArray);
+console.log('Second Band: ' + secondBandArray);
 
 
-
-//let possibleBandNames = secondBandArray.map(secondBandArray => firstBandArray.map(firstBandArray => firstBandArray + ' ' + secondBandArray));
-//console.log(possibleBandNames);
+// Concatenate both bands name's into a single array.
+let combinedNames = [].concat(firstBandArray, secondBandArray);
+console.log(combinedNames);
