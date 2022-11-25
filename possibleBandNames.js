@@ -47,13 +47,16 @@ function possibleBandNames(array) {
     // Generate random number for slicing combinedNames
     const rndInt = Math.floor(Math.random() * 5) + 2
 
+    /*function newPossibleBandName() {
+
+    }*/
+
     shuffle(combinedNames)
-    
-    console.log(combinedNames.slice(0,rndInt))
 
     // Turn new combinedNames into a single string
-    let newPossibleBandName = combinedNames.join(" ")
+    let newPossibleBandName = combinedNames.slice(0,rndInt)
     console.log(newPossibleBandName)
+    console.log(newPossibleBandName.join(' '))
 
 }
 
