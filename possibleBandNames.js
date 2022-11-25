@@ -7,10 +7,49 @@ console.log('The chosen band names are ' + firstBandName + ' and ' + secondBandN
 let firstBandArray = firstBandName.split(' ');
 console.log('First Band: ' + firstBandArray);
 
+let firstBandWordLength = firstBandArray.length;
+
 let secondBandArray = secondBandName.split(' ');
 console.log('Second Band: ' + secondBandArray);
 
 
 // Concatenate both bands name's into a single array.
-let combinedNames = [].concat(firstBandArray, secondBandArray);
-console.log(combinedNames);
+/*let combinedNames = [].concat(firstBandArray, secondBandArray);
+console.log(combinedNames)
+
+combinedNames.forEach(bandNameLength);
+
+function count(array) {
+
+    var c = 0;
+    for(i in array) {
+        if(array[i] != undefined) {
+            c++
+        }
+    }
+
+    return c;
+
+}  
+
+var total = count(array);
+console.log(total)
+*/
+
+
+function bandNameLength(firstBandArray, index) {
+    console.log(firstBandArray.length)
+}
+
+/* Randomize array in-place using Durstenfeld shuffle algorithm */
+/*function shuffleArray(combinedNames) {
+    for (var i = combinedNames; i > 0; i--) {
+        var j = Math.floor(Math.random() * (i + 1));
+        var temp = combinedNames[i];
+        combinedNames[i] = combinedNames[j];
+        combinedNames[j] = temp;
+    }
+    console.log(i)
+}
+
+shuffleArray()*/
