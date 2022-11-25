@@ -1,16 +1,22 @@
 // Define two original band names
 let firstBandName = 'Goo Goo Dolls';
 let secondBandName = 'Foo Fighters';
-console.log('The chosen band names are ' + firstBandName + ' and ' + secondBandName);
+console.log('The chosen band names are "' + firstBandName + '" and "' + secondBandName + '"');
 
 // Turn both names into an array
 let firstBandArray = firstBandName.split(' ');
 console.log('First Band: ' + firstBandArray);
 
-let firstBandWordLength = firstBandArray.length;
 
 let secondBandArray = secondBandName.split(' ');
 console.log('Second Band: ' + secondBandArray);
+
+// Give each band's total amount of words in their name
+let firstBandWordLength = firstBandArray.length;
+console.log('Total words in First Band\'s name: ' + firstBandWordLength)
+
+let secondBandWordLength = secondBandArray.length;
+console.log('Total words in irst Band\'s name: ' + secondBandWordLength)
 
 
 // Concatenate both bands name's into a single array.
