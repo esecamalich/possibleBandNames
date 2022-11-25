@@ -1,22 +1,50 @@
 function possibleBandNames(array) {
-// Define two original band names
-let firstBandName = 'Goo Goo Dolls';
-let secondBandName = 'Foo Fighters';
-console.log('The chosen band names are "' + firstBandName + '" and "' + secondBandName + '"');
 
-// Turn both names into an array
-let firstBandArray = firstBandName.split(' ');
-console.log('First Band: ' + firstBandArray);
+    // Define two original band names
+    let firstBandName = 'Goo Goo Dolls';
+    let secondBandName = 'Foo Fighters';
+    console.log('The chosen band names are "' + firstBandName + '" and "' + secondBandName + '"');
 
-let secondBandArray = secondBandName.split(' ');
-console.log('Second Band: ' + secondBandArray);
+    // Turn both names into an array
+    let firstBandArray = firstBandName.split(' ');
+    console.log('First Band: ' + firstBandArray);
 
-// Give each band's total amount of words in their name
-let firstBandWordLength = firstBandArray.length;
-console.log('Total words in First Band\'s name: ' + firstBandWordLength)
+    let secondBandArray = secondBandName.split(' ');
+    console.log('Second Band: ' + secondBandArray);
 
-let secondBandWordLength = secondBandArray.length;
-console.log('Total words in irst Band\'s name: ' + secondBandWordLength)
+    // Give each band's total amount of words in their name
+    let firstBandWordLength = firstBandArray.length;
+    console.log('Total words in First Band\'s name: ' + firstBandWordLength)
+
+    let secondBandWordLength = secondBandArray.length;
+    console.log('Total words in irst Band\'s name: ' + secondBandWordLength)
+
+    // Concatenate both bands name's into a single array.
+    let combinedNames = [].concat(firstBandArray, secondBandArray);
+    console.log(combinedNames)
+
+    //combinedNames.forEach(bandNameLength);
+
+    function shuffle(array) {
+        let currentIndex = array.length,  randomIndex;
+        
+        // While there remain elements to shuffle.
+        while (currentIndex != 0) {
+        
+            // Pick a remaining element.
+            randomIndex = Math.floor(Math.random() * currentIndex);
+            currentIndex--;
+        
+            // And swap it with the current element.
+            [array[currentIndex], array[randomIndex]] = [
+            array[randomIndex], array[currentIndex]];
+        }
+        
+        return array;
+    }
+
+    shuffle(combinedNames)
+    console.log(combinedNames)
 
 }
 
@@ -25,13 +53,8 @@ possibleBandNames();
 
 // TODO: Set the amount of 
 
-// Concatenate both bands name's into a single array.
-/*let combinedNames = [].concat(firstBandArray, secondBandArray);
-console.log(combinedNames)
 
-combinedNames.forEach(bandNameLength);
-
-function count(array) {
+/*function count(array) {
 
     var c = 0;
     for(i in array) {
